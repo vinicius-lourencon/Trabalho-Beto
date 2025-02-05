@@ -1,3 +1,21 @@
+#EXERC 1
+lista_palavras = ["joao", "beto", "ana", "orelha", "isqueiro"]
+vogais = ["a", "e", "i", "o", "u"]
+pal_vogal = list(filter(lambda palavra: palavra[0].lower() in "aeiou", lista_palavras))
+print(f'As palavras com vogal são = {pal_vogal}')
+
+#EXERC 2
+
+celsius = [31,29,28,33,27]
+farenhifshifhe =  list(map(lambda c: c * 9/5 + 32, celsius))
+print(f'Os graus de C para F são = {farenhifshifhe}')
+
+#EXERC 3
+
+lista_num = [-1, -2, 2, 4, 7,-10, 2, 4, 6, 7, 9, 3]
+impares = list(filter(lambda x: x % 2==1,lista_num))
+quadrado_impar = list(map(lambda x: x**2, impares))
+
 #exerc3
 from functools import reduce
 
